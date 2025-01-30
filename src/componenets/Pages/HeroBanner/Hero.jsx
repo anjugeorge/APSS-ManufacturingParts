@@ -10,14 +10,13 @@ const Hero = () => {
   return (
     <>
       <main>
-        <div className=" relative overflow-hidden">
-          <div className="container grid grid-cols-1 md:grid-cols-2  pt-10">
-            <div className=" text-black text-center md:text-start">
-              {" "}
-              <h1 className="lg:text-4xl md:text-2xl text-lg pb-3  font-bold">
+        <div>
+          <div className="container grid grid-cols-1 md:grid-cols-3 bg-[#020202] md:py-16">
+            <div className="flex flex-col col-span-2 py-10 md:py-20 text-center md:text-start">
+              <h1 className="lg:text-5xl md:text-3xl text-xl pb-3  font-bold font-varela text-white">
                 Your One-Stop Shop for Premium Mechanical Parts
               </h1>
-              <p className="pb-3  text-sm/7">
+              <p className="pb-3 md:w-5/6 text-sm/7 text-stone-300">
                 Welcome to APSS, where quality meets efficiency in the world of
                 mechanical parts. As industry leaders in supplying industrial
                 machinery components and automotive parts, we are not just
@@ -29,17 +28,16 @@ const Hero = () => {
               </div>
             </div>
             <div
-              className="mx-auto  md:pt-28"
+              className="mx-auto"
               data-aos="zoom-in"
               data-aos-duration="1500"
             >
               <img
-                className="h-auto rounded-lg w-full max-w-xs  md:pt-20"
-                src="/assets/header.png"
+                className="h-auto rounded-lg w-full max-w-lg"
+                src="/assets/679babb450e29.png"
                 alt="image description"
               />
             </div>
-            <div class="bg-black w-[2500px] h-[2500px]  rounded-3xl absolute top-[15%] left-[-10%] md:top-[30%] md:left-[10%] rotate-[77deg] -z-10"></div>
           </div>
         </div>
       </main>

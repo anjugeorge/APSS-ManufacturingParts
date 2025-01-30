@@ -5,7 +5,12 @@ import axios from "axios";
 
 export default function DataGridDemo() {
   const [products, setProducts] = React.useState([]);
-
+  const [width, setWidth] = React.useState(window.innerWidth);
+  React.useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   React.useEffect(() => {
     async function productList() {
       try {
@@ -37,7 +42,7 @@ export default function DataGridDemo() {
   }));
 
   return (
-    <Box sx={{ height: 400, width: "100%" }}>
+    <Box sx={{ height: "400px", width: "100%" }}>
       <DataGrid
         rows={rows}
         columns={columns}

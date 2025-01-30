@@ -113,62 +113,61 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="">
-        <div className=" container  grid grid-cols-1 md:grid-cols-2 gap-1 py-20">
-          <div
-            className="row-span-1 md:row-span-3 mx-auto"
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-          >
-            {" "}
-            <img
-              className="h-auto rounded-lg w-full max-w-sm"
-              src="/assets/mechanicalParts.png"
-              alt="image description"
-            />
-          </div>
-          <div className="col-span-1  my-auto">
-            <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
-              Experience the Difference
-            </h1>
-          </div>
-          <div className=" md:row-span-1 col-span-1 text-start md:w-[500px]  text-sm/7 my-auto py-1">
-            {" "}
-            Don't let subpar parts hold your business back. Join the ranks of
-            satisfied clients who trust us to keep their operations running at
-            peak efficiency. Your success is our driving force. Partner with
-            APSS today and experience the perfect blend of quality, service, and
-            value.
-          </div>
-          <div className="col-span-1 my-auto text-center  md:text-start gap-4">
-            {" "}
-            <button
-              type="button"
-              className="px-5 py-2.5 text-sm font-medium text-white bg-buttonColor rounded-lg hover:bg-buttonHoverColor"
-              onClick={showTable}
+      <section>
+        <div className="container bg-black py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2  pt-10">
+            <div
+              className="mx-auto "
+              data-aos="zoom-in"
+              data-aos-duration="1500"
             >
-              Explore Our Products
-            </button>
+              <img
+                className="h-auto rounded-lg w-full max-w-xs"
+                src="/assets/HeaderImage.png"
+                alt="image description"
+              />
+            </div>{" "}
+            <div className="text-center md:text-start my-auto  text-white">
+              <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
+                Experience the Difference
+              </h1>
+              <p className="pb-3  text-sm/7">
+                Don't let subpar parts hold your business back. Join the ranks
+                of satisfied clients who trust us to keep their operations
+                running at peak efficiency. Your success is our driving force.
+                Partner with APSS today and experience the perfect blend of
+                quality, service, and value.
+              </p>
+              <div className="col-span-1 my-auto text-center  md:text-start gap-4">
+                {" "}
+                <button
+                  type="button"
+                  className="px-5 py-2.5 text-sm font-medium text-white bg-buttonColor rounded-lg hover:bg-buttonHoverColor"
+                  onClick={showTable}
+                >
+                  Explore Our Products
+                </button>
+              </div>
+            </div>
           </div>
+          {table && (
+            <div className="relative">
+              <div className="absolute -top-10 right-0">
+                {" "}
+                <button
+                  type="button"
+                  className="px-2 py-2.5 text-sm font-medium text-white bg-buttonColor rounded-lg hover:bg-buttonHoverColor"
+                  onClick={closeTable}
+                >
+                  <AiFillCloseSquare />
+                </button>
+              </div>
+              <div className="grid grid-cols-1 pt-2 pb-20 " id="datagrid">
+                <DataGridDemo />
+              </div>
+            </div>
+          )}
         </div>
-
-        {table && (
-          <div className="relative">
-            <div className="absolute -top-10 right-0">
-              {" "}
-              <button
-                type="button"
-                className="px-2 py-2.5 text-sm font-medium text-white bg-buttonColor rounded-lg hover:bg-buttonHoverColor"
-                onClick={closeTable}
-              >
-                <AiFillCloseSquare />
-              </button>
-            </div>
-            <div className="grid grid-cols-1 pt-2 pb-20 " id="datagrid">
-              <DataGridDemo />
-            </div>
-          </div>
-        )}
       </section>
 
       <section className=" bg-gray-200  ">
@@ -198,10 +197,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="">
+      <section className="bg-black">
         <div className="container py-20">
           <div className="grid grid-cols-1 gap-4">
-            <div>
+            <div className="text-white">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
                 Why Choose Us?
               </h1>
@@ -211,7 +210,7 @@ const HomePage = () => {
               </p>
             </div>
             <div
-              className="mx-auto"
+              className="mx-auto text-white"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
