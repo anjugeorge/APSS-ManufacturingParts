@@ -210,7 +210,7 @@ const HomePage = () => {
               </p>
             </div>
             <div
-              className="mx-auto "
+              className="mx-auto text-white"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
