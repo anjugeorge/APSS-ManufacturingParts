@@ -199,8 +199,8 @@ const HomePage = () => {
 
       <section className="">
         <div className="container py-20">
-          <div className="grid grid-cols-1 gap-4 bg-black py-10 px-5 text-buttonColor ">
-            <div className="text-buttonColor">
+          <div className="grid grid-cols-1 gap-4 bg-black py-10 px-5">
+            <div className="text-white">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
                 Why Choose Us?
               </h1>
