@@ -13,7 +13,7 @@ const Hero = () => {
         <div>
           <div className="container grid grid-cols-1 md:grid-cols-3 bg-[#020202] md:py-16">
             <div className="flex flex-col col-span-2 py-10 md:py-10 text-center md:text-start">
-              <h1 className="text-3xl  md:text-5xl pb-3  text-white">
+              <h1 className="lg:text-5xl  md:text-4xl sm:text-3xl pb-3  text-white">
                 Your One-Stop Shop for Premium Mechanical Parts
               </h1>
               <p className="pb-3 md:w-5/6 text-sm/7 text-stone-300">
