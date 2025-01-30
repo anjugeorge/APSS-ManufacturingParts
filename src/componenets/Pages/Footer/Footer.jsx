@@ -24,7 +24,7 @@ const Footer = () => {
       <footer>
         {" "}
         <div className="bg-black">
-          <div className="container py-10 flex flex-col items-center text-white">
+          <div className="container py-10 flex flex-col items-center text-buttonColor">
             <a href="/">
               {" "}
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">

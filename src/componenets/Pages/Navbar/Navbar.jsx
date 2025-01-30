@@ -33,18 +33,15 @@ const Navbar = () => {
   return (
     <>
       <div className=" shadow-sm ">
-        <nav className="container   mx-auto flex items-center justify-between text-buttonHoverColor font-bold  py-5 bg-[#020202] font-poppins">
+        <nav className="container mx-auto flex items-center justify-between text-buttonColor font-bold  py-5 bg-[#020202] font-poppins">
           {/* Logo Section*/}
           <div>
             <a href="/">
               {" "}
-              <h3 className="flex">
+              <h3 className="text-lg flex">
                 <FontAwesomeIcon icon={faGears} />
                 APSS
               </h3>
-              <span className="font-thin text-xs">
-                Powering Industries, Driving Innovation
-              </span>
             </a>
           </div>
           {/* Menu Section*/}

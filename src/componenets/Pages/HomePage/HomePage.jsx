@@ -97,7 +97,7 @@ const HomePage = () => {
             data-aos-duration="1500"
           >
             {expertiseContent.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg  p-6">
+              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor  rounded-lg  p-6">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
                   <h5 className="ml-3 text-slate-800 font-semibold  text-sm/7">
@@ -114,8 +114,8 @@ const HomePage = () => {
       </section>
 
       <section>
-        <div className="container bg-black py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2  pt-10">
+        <div className="container py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2  pt-10 bg-black ">
             <div
               className="mx-auto "
               data-aos="zoom-in"
@@ -127,7 +127,7 @@ const HomePage = () => {
                 alt="image description"
               />
             </div>{" "}
-            <div className="text-center md:text-start my-auto  text-white">
+            <div className="text-center md:text-start my-auto  text-white ">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
                 Experience the Difference
               </h1>
@@ -162,7 +162,10 @@ const HomePage = () => {
                   <AiFillCloseSquare />
                 </button>
               </div>
-              <div className="grid grid-cols-1 pt-2 pb-20 " id="datagrid">
+              <div
+                className="grid grid-cols-1 pt-2 pb-20 bg-gray-200"
+                id="datagrid"
+              >
                 <DataGridDemo />
               </div>
             </div>
@@ -181,7 +184,7 @@ const HomePage = () => {
             data-aos-duration="1500"
           >
             {services.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg  p-6">
+              <div className="flex flex-col bg-white shadow-sm  border-l-4 border-buttonColor rounded-lg  p-6">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
                   <h5 className="ml-3 text-slate-800 font-semibold  text-sm/7">
@@ -197,10 +200,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-black">
+      <section className="">
         <div className="container py-20">
-          <div className="grid grid-cols-1 gap-4">
-            <div className="text-white">
+          <div className="grid grid-cols-1 gap-4 bg-black py-10 px-5 text-buttonColor ">
+            <div className="text-buttonColor">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
                 Why Choose Us?
               </h1>
@@ -210,7 +213,7 @@ const HomePage = () => {
               </p>
             </div>
             <div
-              className="mx-auto text-white"
+              className="mx-auto "
               data-aos="fade-up"
               data-aos-duration="1500"
             >
