@@ -2,29 +2,26 @@ import React, { useEffect } from "react";
 import FormDialog from "../Form/RequestAQuoteForm";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const AboutUsHero = () => {
+const ProcessHero = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <>
       <main>
-        <div className=" relative overflow-hidden ">
-          <div className="container grid grid-cols-1 md:grid-cols-2  pt-10">
-            <div className=" text-black  text-center md:text-start ">
+        <div className=" relative overflow-hidden">
+          <div className="container   grid grid-cols-1 md:grid-cols-2  pt-10">
+            <div className=" text-black  text-center md:text-start  ">
               {" "}
               <h1 className="lg:text-4xl md:text-2xl text-lg pb-3 font-bold">
-                Your Trusted Partner in Mechanical Parts
+                Get Your Tailored Quote Today!
               </h1>
               <p className="pb-3  text-sm/7 ">
-                At APSS Solutions, we are not just a mechanical parts reseller –
-                we are your dedicated partner in powering innovation and
-                efficiency. Our journey began with a simple vision: to provide
-                top-quality mechanical components with unparalleled service and
-                expertise.
+                At APSS, we are your one-stop shop for all things mechanical.
+                Whether you need industrial machinery parts, general mechanical
+                spares, or automotive components, we have got you covered.
               </p>
               <div className="pb-5">
-                {" "}
                 <FormDialog />
               </div>
             </div>
@@ -47,4 +44,4 @@ const AboutUsHero = () => {
   );
 };
 
-export default AboutUsHero;
+export default ProcessHero;
