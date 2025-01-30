@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       <div className=" shadow-sm ">
-        <nav className="container mx-auto flex items-center justify-between text-buttonColor font-bold  py-5 bg-[#020202] font-poppins">
+        <nav className="container   mx-auto flex items-center justify-between text-buttonHoverColor font-bold  py-5 bg-[#020202] font-poppins">
           {/* Logo Section*/}
           <div>
             <a href="/">
