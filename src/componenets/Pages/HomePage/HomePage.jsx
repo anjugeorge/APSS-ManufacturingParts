@@ -114,8 +114,8 @@ const HomePage = () => {
       </section>
 
       <section>
-        <div className="container py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2  pt-10 bg-black ">
+        <div className="container bg-black py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2  pt-10">
             <div
               className="mx-auto "
               data-aos="zoom-in"
@@ -127,7 +127,7 @@ const HomePage = () => {
                 alt="image description"
               />
             </div>{" "}
-            <div className="text-center md:text-start my-auto  text-white ">
+            <div className="text-center md:text-start my-auto  text-white">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
                 Experience the Difference
               </h1>
@@ -162,10 +162,7 @@ const HomePage = () => {
                   <AiFillCloseSquare />
                 </button>
               </div>
-              <div
-                className="grid grid-cols-1 pt-2 pb-20 bg-gray-200"
-                id="datagrid"
-              >
+              <div className="grid grid-cols-1 pt-2 pb-20 " id="datagrid">
                 <DataGridDemo />
               </div>
             </div>
