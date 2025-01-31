@@ -170,7 +170,7 @@ const Process = () => {
               </ul>
             </div>
             <div
-              className="bg-black shadow-sm border border-slate-200   p-6 mx-auto text-white"
+              className="bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
