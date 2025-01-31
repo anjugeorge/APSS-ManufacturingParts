@@ -115,7 +115,7 @@ const HomePage = () => {
 
       <section>
         <div className="container  py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2  pt-10 bg-black text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 p-10 bg-black text-white">
             <div
               className="mx-auto "
               data-aos="zoom-in"
