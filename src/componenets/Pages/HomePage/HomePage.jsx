@@ -151,7 +151,7 @@ const HomePage = () => {
             </div>
           </div>
           {table && (
-            <div className="relative">
+            <div className="relative bg-gray-200">
               <div className="absolute -top-10 right-0">
                 {" "}
                 <button
