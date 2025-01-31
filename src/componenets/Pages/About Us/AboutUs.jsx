@@ -181,7 +181,7 @@ const AboutUs = () => {
             data-aos-duration="1500"
           >
             {customerCentricApproach.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg  p-6 mx-auto">
+              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor  rounded-lg  p-6 mx-auto">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
                   <h5 className="ml-3 text-slate-800 font-semibold text-sm/7">

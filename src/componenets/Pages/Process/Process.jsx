@@ -121,7 +121,7 @@ const Process = () => {
             data-aos-duration="1500"
           >
             {requestQuoteContent.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg  p-6">
+              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor rounded-lg  p-6">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
                   <h5 className="ml-3 text-slate-800 font-semibold text-sm/7">
@@ -170,7 +170,7 @@ const Process = () => {
               </ul>
             </div>
             <div
-              className="bg-white shadow-sm border border-slate-200 rounded-lg  p-6 mx-auto"
+              className="bg-black shadow-sm border border-slate-200   p-6 mx-auto text-white"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
