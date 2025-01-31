@@ -114,7 +114,7 @@ const HomePage = () => {
       </section>
 
       <section>
-        <div className="container bg-black py-20">
+        <div className="container  py-20">
           <div className="grid grid-cols-1 md:grid-cols-2  pt-10">
             <div
               className="mx-auto "
@@ -127,7 +127,7 @@ const HomePage = () => {
                 alt="image description"
               />
             </div>{" "}
-            <div className="text-center md:text-start my-auto  text-white">
+            <div className="text-center md:text-start my-auto  ">
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
                 Experience the Difference
               </h1>
@@ -151,7 +151,7 @@ const HomePage = () => {
             </div>
           </div>
           {table && (
-            <div className="relative bg-gray-200">
+            <div className="relative">
               <div className="absolute -top-10 right-0">
                 {" "}
                 <button
@@ -199,8 +199,8 @@ const HomePage = () => {
 
       <section className="">
         <div className="container py-20">
-          <div className="grid grid-cols-1 gap-4 bg-black py-10 px-5">
-            <div className="text-white">
+          <div className="grid grid-cols-1 gap-4 py-10 px-5">
+            <div>
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
                 Why Choose Us?
               </h1>
@@ -210,7 +210,7 @@ const HomePage = () => {
               </p>
             </div>
             <div
-              className="mx-auto text-white"
+              className="mx-auto "
               data-aos="fade-up"
               data-aos-duration="1500"
             >
