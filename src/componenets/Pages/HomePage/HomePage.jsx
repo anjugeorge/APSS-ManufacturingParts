@@ -128,8 +128,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section>
-        <div className="container bg-[#f7fafa]">
+      <section className="bg-[#f7fafa]">
+        <div className="container ">
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div
               className="mx-auto "

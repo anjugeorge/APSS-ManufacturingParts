@@ -10,8 +10,8 @@ const Hero = () => {
   return (
     <>
       <main>
-        <div>
-          <div className="container grid grid-cols-1 md:grid-cols-3 bg-[url('/assets/APSSBg.png')] bg-cover bg-center md:py-16 md:gap-12">
+        <div className="bg-[url('/assets/APSSBg.png')] bg-cover bg-center">
+          <div className="container grid grid-cols-1 md:grid-cols-3  md:py-16 md:gap-12">
             <div className=" text-center md:text-start pt-10">
               <div
                 data-aos="fade-down"
@@ -19,7 +19,7 @@ const Hero = () => {
                 data-aos-once="true"
               >
                 {" "}
-                <h1 className="text-3xl pb-3  text-white font-varela  animate-pulse">
+                <h1 className="text-3xl pb-3  text-stone-300 font-varela  animate-pulse">
                   Powering Industries, Driving Innovation
                 </h1>
                 <p className="pb-3  text-sm/7 text-stone-300 ">
@@ -45,7 +45,7 @@ const Hero = () => {
               />
             </div>
             <div
-              className="md:pt-48 pb-10  text-center md:text-start order-2 md:order-3"
+              className="md:pt-52 pb-10  text-center md:text-start order-2 md:order-3"
               data-aos="flip-right"
               data-aos-duration="1500"
               data-aos-once="true"
