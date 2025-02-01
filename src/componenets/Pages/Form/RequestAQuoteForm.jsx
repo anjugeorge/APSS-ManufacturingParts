@@ -157,7 +157,7 @@ export default function FormDialog() {
     <React.Fragment>
       <Button
         variant="contained"
-        style={{ backgroundColor: "#A87676" }}
+        style={{ backgroundColor: "#3D606E" }}
         onClick={handleClickOpen}
       >
         Request a Quote
@@ -245,18 +245,15 @@ export default function FormDialog() {
             variant="standard"
             onChange={handleChange}
           />
-          <label>Select a Product</label>
           <NativeSelect
             onChange={handleChange}
             name="product"
-            value={quoteDetials.product}
             fullWidth
             variant="standard"
+            label="Select a Product"
           >
             {products.map((product) => (
-              <option name="product" value={product.product}>
-                {product.product}
-              </option>
+              <option name="product">{product.productName}</option>
             ))}
           </NativeSelect>
           <TextField

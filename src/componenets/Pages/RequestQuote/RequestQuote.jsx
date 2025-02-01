@@ -5,7 +5,7 @@ const RequestQuote = () => {
   return (
     <div>
       {" "}
-      <section className=" bg-gray-200">
+      <section className=" ">
         <div className=" container py-20 flex flex-col items-center">
           <div className="lg:py-12 text-center">
             {" "}

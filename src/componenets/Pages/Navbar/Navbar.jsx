@@ -32,13 +32,13 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className=" shadow-sm ">
-        <nav className="container   mx-auto flex items-center justify-between text-buttonHoverColor font-bold  py-5 bg-[#020202] font-poppins">
+      <div className=" shadow-sm border-b-0 bg-[url('/assets/APSSBg.png')] bg-cover bg-center-bottom">
+        <nav className="container   mx-auto flex items-center justify-between text-white font-bold  py-5  font-poppins">
           {/* Logo Section*/}
           <div>
             <a href="/">
               {" "}
-              <h3 className="text-lg flex">
+              <h3 className="text-xl font-bold flex">
                 <FontAwesomeIcon icon={faGears} />
                 APSS
               </h3>

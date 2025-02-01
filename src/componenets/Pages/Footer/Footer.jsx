@@ -23,7 +23,7 @@ const Footer = () => {
       {" "}
       <footer>
         {" "}
-        <div className="bg-[#664343]">
+        <div className="bg-[#153B47]">
           <div className="container py-10 flex flex-col items-center text-white">
             <a href="/">
               {" "}
