@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <main>
-        <div className="bg-[url('/assets/APSSBg.png')] bg-cover bg-center">
+        <div className="bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
           <div className="container grid grid-cols-1 md:grid-cols-3  md:py-16 md:gap-12">
             <div className=" text-center md:text-start pt-10">
               <div
@@ -19,7 +19,7 @@ const Hero = () => {
                 data-aos-once="true"
               >
                 {" "}
-                <h1 className="text-3xl pb-3  text-stone-300 font-varela  animate-pulse">
+                <h1 className="text-3xl pb-3  text-stone-300 font-varela">
                   Powering Industries, Driving Innovation
                 </h1>
                 <p className="pb-3  text-sm/7 text-stone-300 ">
@@ -39,8 +39,8 @@ const Hero = () => {
               data-aos-duration="1500"
             >
               <img
-                className="h-auto rounded-lg w-full max-w-lg  animate-pulse  md:order-2"
-                src="/assets/b.png"
+                className="h-auto rounded-xl w-full max-w-lg   md:order-2"
+                src="/assets/Black-Teal.png"
                 alt="image description"
               />
             </div>

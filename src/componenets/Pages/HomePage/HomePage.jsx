@@ -138,7 +138,7 @@ const HomePage = () => {
             >
               <img
                 className="h-auto rounded-lg w-full max-w-sm"
-                src="/assets/mechanicalComponent.png"
+                src="/assets/BlackandTealImg.png"
                 alt="image description"
               />
             </div>{" "}
