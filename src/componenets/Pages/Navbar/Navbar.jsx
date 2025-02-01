@@ -66,7 +66,7 @@ const Navbar = () => {
         <div>
           {menu && (
             <div className="">
-              <div className="absolute start-0 top-12 w-full max-h-full  bg-black z-10 text-buttonHoverColor font-bold">
+              <div className="absolute start-0 top-12 w-full max-h-full  bg-black z-10 text-white font-bold">
                 <ul>
                   {NavbarMenu.map((item) => (
                     <li className="text-center p-5" key={item.id}>

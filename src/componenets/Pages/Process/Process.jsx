@@ -100,7 +100,7 @@ const Process = () => {
     <div>
       <ProcessHero />
 
-      <section className=" bg-gray-200">
+      <section>
         <div className="container py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Why Request a Quote from Us?
@@ -137,8 +137,8 @@ const Process = () => {
         </div>
       </section>
 
-      <section className="">
-        <div className=" container pt-20">
+      <section className="bg-[#f7fafa]">
+        <div className=" container py-20">
           <div className=" pb-10">
             <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
               Ready to Get Started? It's Easy!
