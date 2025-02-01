@@ -10,19 +10,19 @@ const Hero = () => {
   return (
     <>
       <main>
-        <div className="bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
-          <div className="container grid grid-cols-1 md:grid-cols-3  md:py-16 md:gap-12">
-            <div className=" text-center md:text-start pt-10">
+        <div className="bg-[#eefefe] dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
+          <div className="container grid grid-cols-1 md:grid-cols-3 py-12  md:py-16 md:gap-12">
+            <div className=" text-center md:text-start">
               <div
                 data-aos="fade-down"
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
                 {" "}
-                <h1 className="text-3xl pb-3  text-stone-300 font-varela">
+                <h1 className="text-3xl pb-3 text-buttonHoverColor dark:text-stone-300 font-varela">
                   Powering Industries, Driving Innovation
                 </h1>
-                <p className="pb-3  text-sm/7 text-stone-300 ">
+                <p className="pb-3  text-sm/7 text-buttonHoverColor dark:text-stone-300 ">
                   Welcome to{" "}
                   <strong className=" animate-pulse">
                     APSS, Your One-Stop Shop for Premium Mechanical Parts
@@ -51,7 +51,7 @@ const Hero = () => {
               data-aos-once="true"
             >
               {" "}
-              <p className="pb-3  text-sm/7 text-stone-300 ">
+              <p className="pb-3  text-sm/7 text-buttonHoverColor dark:text-stone-300 ">
                 As industry leaders in supplying industrial machinery components
                 and automotive parts, we are not just selling products, we are
                 fueling the engines of progress.

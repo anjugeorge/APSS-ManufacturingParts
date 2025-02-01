@@ -6,13 +6,13 @@ const RequestQuote = () => {
     <div>
       {" "}
       <section className=" ">
-        <div className=" container py-20 flex flex-col items-center">
+        <div className=" container  flex flex-col items-center">
           <div className="lg:py-12 text-center">
             {" "}
             <h1 className="lg:text-3xl md:text-2xl text-lg pb-3 text-center font-bold">
               Join Our Journey
             </h1>
-            <p className="pb-3 text-sm/7">
+            <p className="pb-3 px-28 text-sm/7">
               As we look to the future, we&#39;re excited about the
               possibilities that lie ahead. From emerging technologies to
               evolving industry needs, we&#39;re committed to staying one step

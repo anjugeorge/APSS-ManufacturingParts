@@ -9,8 +9,8 @@ const ProcessHero = () => {
   return (
     <>
       <main>
-        <div className="bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
-          <div className="container grid grid-cols-1 md:grid-cols-3  md:py-16 md:gap-12">
+        <div className="bg-[#eefefe] dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
+          <div className="container grid grid-cols-1 md:grid-cols-3 py-12  md:py-16 md:gap-12">
             <div className=" text-center md:text-start pt-10">
               <div
                 data-aos="fade-down"
@@ -18,10 +18,10 @@ const ProcessHero = () => {
                 data-aos-once="true"
               >
                 {" "}
-                <h1 className="text-3xl pb-3  text-stone-300 font-varela  ">
+                <h1 className="text-3xl pb-3  text-buttonHoverColor dark:text-stone-300 font-varela  ">
                   Get Your Tailored Quote Today!
                 </h1>
-                <p className="pb-3  text-sm/7 text-stone-300 ">
+                <p className="pb-3  text-sm/7 text-buttonHoverColor dark:text-stone-300 ">
                   At APSS, we are your one-stop shop for all things mechanical.
                 </p>
               </div>
@@ -45,7 +45,7 @@ const ProcessHero = () => {
               data-aos-once="true"
             >
               {" "}
-              <p className="pb-3  text-sm/7 text-stone-300 ">
+              <p className="pb-3  text-sm/7 text-buttonHoverColor dark:text-stone-300 ">
                 Whether you need industrial machinery parts, general mechanical
                 spares, or automotive components, we have got you covered.
               </p>
