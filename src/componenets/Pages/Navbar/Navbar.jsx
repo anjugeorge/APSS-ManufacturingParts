@@ -80,7 +80,7 @@ const Navbar = () => {
         <div>
           {menu && (
             <div className="">
-              <div className="absolute start-0 top-12 w-full max-h-full bg-[#eefefe] dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center z-10 text-white font-bold">
+              <div className="absolute start-0 top-12 w-full max-h-full bg-gray-100 dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center z-10 text-white font-bold">
                 <ul>
                   {NavbarMenu.map((item) => (
                     <li
