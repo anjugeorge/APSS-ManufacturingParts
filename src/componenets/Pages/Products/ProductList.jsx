@@ -47,7 +47,7 @@ export default function ProductList() {
   return (
     <>
       <ProductHero />
-      <div className="mx-32 my-20">
+      <div className="mx-10 lg:mx-32 my-20">
         <Box sx={{ height: "400px", width: "100%" }}>
           <DataGrid
             rows={rows}
