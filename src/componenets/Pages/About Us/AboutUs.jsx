@@ -163,7 +163,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="bg-[#f7fafa]">
+      <section className="bg-gray-200">
         <div className="container py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Customer-Centric Approach

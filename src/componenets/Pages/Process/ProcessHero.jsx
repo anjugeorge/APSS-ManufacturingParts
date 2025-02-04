@@ -9,7 +9,7 @@ const ProcessHero = () => {
   return (
     <>
       <main>
-        <div className="bg-[#eefefe] dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
+        <div className="bg-gray-100 dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center">
           <div className="container grid grid-cols-1 md:grid-cols-3 py-12  md:py-16 md:gap-12">
             <div className=" text-center md:text-start pt-10">
               <div

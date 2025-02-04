@@ -40,7 +40,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className=" shadow-sm border-b-0 bg-[#eefefe] dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center-bottom">
+      <div className=" shadow-sm border-b-0 bg-gray-100 dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center-bottom">
         <nav className="container   mx-auto flex items-center justify-between text-buttonHoverColor dark:text-white font-bold  py-5  font-poppins">
           {/* Logo Section*/}
           <div>
