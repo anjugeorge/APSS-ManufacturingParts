@@ -13,24 +13,33 @@ import { AiFillCloseSquare } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCertificate } from "@fortawesome/free-solid-svg-icons";
-import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
+import { faTruckMoving } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBill1Wave } from "@fortawesome/free-solid-svg-icons";
 import { faTruckRampBox } from "@fortawesome/free-solid-svg-icons";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+
 const expertiseContent = [
   {
     id: 1,
     title: "Industrial Machinery Components",
     desc: "From gears to bearings, our extensive inventory of industrial machinery components keeps your operations running smoothly. Whether you&#39;re maintaining a production line or upgrading your facilities, we have got the parts you need.",
-    icon: <FaIndustry />,
+    icon: (
+      <FontAwesomeIcon icon={faGears} style={{ color: "#e3b04b" }} size="5x" />
+    ),
   },
   {
     id: 2,
     title: "Automotive Excellence",
     desc: "Rev up your automotive projects with our comprehensive range of high-quality parts. From engine components to transmission systems, we are your trusted partner in keeping vehicles onthe road.",
-    icon: <FcAutomotive />,
+    icon: (
+      <FontAwesomeIcon
+        icon={faTruckMoving}
+        style={{ color: "#e3b04b" }}
+        size="5x"
+      />
+    ),
   },
 ];
 
@@ -39,46 +48,45 @@ const services = [
     id: 1,
     title: "Expert Technical Support:",
     desc: "Our team of seasoned professionals is always ready to assist you with any technical queries.",
-    icon: <MdContactSupport />,
+    image: "/assets/fastDelivery.png",
   },
   {
     id: 2,
     title: "Seamless Installation Assistance",
     desc: "Need help with installation? Our experts are just a call away.",
-    icon: <GrInstall />,
+    image: "/assets/fastDelivery.png",
   },
   {
     id: 3,
     title: "Comprehensive Maintenance",
     desc: "Ensure long-term performance with our tailored maintenance plans.",
-    icon: <FcSupport />,
   },
 ];
 
 const list = [
   {
     id: 1,
-    title: "Uncompromising Quality Assurance",
+    title: "Quality Assurance",
     desc: "Every part we sell undergoes rigorous testing to ensure peak performance.",
-    icon: <FontAwesomeIcon icon={faCertificate} />,
+    image: "/assets/qa.png",
   },
   {
     id: 2,
     title: "Competitive Pricing",
     desc: "Top-tier quality doesn't have to break the bank. We offer the best value for your investment.",
-    icon: <FontAwesomeIcon icon={faCertificate} style={{ color: "#153b47" }} />,
+    image: "/assets/pricing.png",
   },
   {
     id: 3,
     title: "Lightning-Fast Delivery",
     desc: "Our efficient logistics ensure you get what you need, when you need it.",
-    icon: <FontAwesomeIcon icon={faCertificate} style={{ color: "#153b47" }} />,
+    image: "/assets/fastDelivery.png",
   },
   {
     id: 4,
     title: "Vast Inventory",
     desc: "With our extensive stock, your search for that crucial part ends here.",
-    icon: <FontAwesomeIcon icon={faCertificate} style={{ color: "#153b47" }} />,
+    image: "/assets/inventory.png",
   },
 ];
 
@@ -96,7 +104,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <section className="bg-gray-200">
+      <section className="bg-gray-100">
         <div className="container  py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Our Expertise
@@ -107,8 +115,11 @@ const HomePage = () => {
             data-aos-duration="1500"
           >
             {expertiseContent.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor  rounded-lg  p-6">
-                <div key={content.id} className="flex items-center mb-4">
+              <div className=" bg-white shadow-sm border-l-4 border-buttonColor  rounded-lg  p-6">
+                <div
+                  key={content.id}
+                  className="flex flex-col items-center mb-4"
+                >
                   {content.icon}
                   <h5 className="ml-3 text-slate-800 font-semibold  text-sm/7">
                     {content.title}
@@ -123,25 +134,14 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="">
-        <div className="container py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 ">
-            <div
-              className="mx-auto "
-              data-aos="zoom-in"
-              data-aos-duration="1500"
-            >
-              <img
-                className="h-auto rounded-lg w-full max-w-xs"
-                src="/assets/HeaderImg.png"
-                alt="image description"
-              />
-            </div>{" "}
-            <div className="text-center md:text-start my-auto ">
-              <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold ">
+      <section className="bg-[url('/assets/forklift.png')] bg-[cover] md:bg-center bg-right bg-no-repeat">
+        <div className="container py-28">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12">
+            <div className="text-center md:text-start my-auto col-start-2  md:px-7">
+              <h1 className="lg:text-3xl md:text-2xl text-lg text-center md:text-start font-bold text-white">
                 Experience the Difference
               </h1>
-              <p className="pb-3  text-sm/7">
+              <p className="pb-3  text-sm/7 text-white">
                 Don't let subpar parts hold your business back. Join the ranks
                 of satisfied clients who trust us to keep their operations
                 running at peak efficiency. Your success is our driving force.
@@ -153,7 +153,7 @@ const HomePage = () => {
                 <a href="/products">
                   <button
                     type="button"
-                    className="px-5 py-2.5 text-sm font-medium text-white border-2 border-solid bg-buttonColor  rounded-lg hover:bg-buttonHoverColor"
+                    className="px-5 py-2.5 text-sm font-medium  border-2 border-solid bg-buttonColor  rounded-lg hover:bg-buttonHoverColor"
                   >
                     Explore Our Products
                   </button>
@@ -181,7 +181,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-gray-200">
+      <section className="bg-gray-100">
         <div className="container  py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Beyond Parts: Our Value-Added Services
@@ -207,19 +207,27 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <RequestQuote />
-      <section className="bg-gray-200">
+
+      <section className="">
         <div className="container py-20">
           <div>
             <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
               Why Choose Us?
             </h1>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {list.map((content) => (
-              <div className="flex flex-col bg-white shadow-lg  p-6">
-                <div key={content.id} className="flex items-center mb-4">
-                  {content.icon}
+              <div className=" bg-white shadow-lg  p-6">
+                <div
+                  key={content.id}
+                  className=" items-center mb-4 flex flex-col"
+                >
+                  {" "}
+                  <img
+                    className="h-32 md:h-36  w-full "
+                    src={content.image}
+                    alt="image description"
+                  />
                   <h5 className="ml-3 text-slate-800 font-semibold  text-sm/7">
                     {content.title}
                   </h5>
@@ -232,7 +240,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
+      <RequestQuote />
       <Footer />
     </>
   );

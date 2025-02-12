@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./componenets/Pages/HomePage/HomePage";
 import Process from "./componenets/Pages/Process/process";
 import ProductList from "./componenets/Pages/Products/ProductList";
+import RequestAQuoteForm from "./componenets/Pages/Form/RequestAQuoteForm";
 
 const App = () => {
   return (
@@ -16,6 +17,11 @@ const App = () => {
         <Route exact path="/about-us" Component={AboutUs}></Route>
         <Route exact path="/how-we-works" Component={Process}></Route>
         <Route exact path="/products" Component={ProductList}></Route>
+        <Route
+          exact
+          path="/requestQuoteForm/:name"
+          Component={RequestAQuoteForm}
+        ></Route>
       </Routes>
     </Router>
   );

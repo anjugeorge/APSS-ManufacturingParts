@@ -107,7 +107,7 @@ const AboutUs = () => {
     <>
       <AboutUsHero />
       <section>
-        <div className="container py-20 ">
+        <div className="container py-20 bg-gray-100">
           <div className="grid grid-cols-1 gap-4">
             <div>
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
@@ -122,7 +122,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-buttonHoverColor text-white p-10 rounded-3xl"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-[#373A40] text-white p-10 rounded-3xl"
               data-aos="fade-up"
               data-aos-duration="1500"
             >

@@ -1,19 +1,24 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid } from "@mui/x-data-grid";
+import {
+  DataGrid,
+  GridToolbarContainer,
+  GridToolbarColumnsButton,
+  GridToolbarFilterButton,
+  GridToolbarExport,
+  GridToolbarDensitySelector,
+} from "@mui/x-data-grid";
 import axios from "axios";
 import ProductHero from "./ProductHero";
-import Hero from "../HeroBanner/Hero";
 import Footer from "../Footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePen } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+import RequestAQuoteForm from "../Form/RequestAQuoteForm";
 
-export default function ProductList() {
+export default function ProductList(props) {
   const [products, setProducts] = React.useState([]);
-  const [width, setWidth] = React.useState(window.innerWidth);
-  React.useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const [selectedRow, setSelectedRow] = React.useState("");
   React.useEffect(() => {
     async function productList() {
       try {
@@ -26,6 +31,27 @@ export default function ProductList() {
     }
     productList();
   }, []);
+
+  function CustomToolbar() {
+    return (
+      <GridToolbarContainer>
+        <GridToolbarFilterButton />
+
+        <Box sx={{ flexGrow: 1 }} />
+        <GridToolbarExport
+          slotProps={{
+            tooltip: { title: "Export data" },
+            button: { variant: "outlined" },
+          }}
+        />
+      </GridToolbarContainer>
+    );
+  }
+
+  function requestQuote(row) {
+    setSelectedRow(row);
+  }
+
   const columns = [
     {
       field: "product",
@@ -37,6 +63,29 @@ export default function ProductList() {
       align: "left",
       flex: 1,
     },
+    {
+      field: "requestQuote",
+      headerName: "Request A Quote For This Product",
+      sortable: false,
+      resizable: false,
+      disableColumnMenu: true,
+      headerClassName: "super-app-theme--header",
+      headerAlign: "center",
+      align: "center",
+      flex: 1,
+      renderCell: (params) => (
+        <div>
+          {" "}
+          <button
+            onClick={() => {
+              requestQuote(params.row.product);
+            }}
+          >
+            <RequestAQuoteForm product={selectedRow} />
+          </button>
+        </div>
+      ),
+    },
   ];
 
   const rows = products.map((item) => ({
@@ -47,19 +96,20 @@ export default function ProductList() {
   return (
     <>
       <ProductHero />
+
       <div className="mx-10 lg:mx-32 my-20">
         <Box sx={{ height: "400px", width: "100%" }}>
           <DataGrid
             rows={rows}
             columns={columns}
+            slots={{ toolbar: CustomToolbar }}
             initialState={{
               pagination: {
                 paginationModel: {
-                  pageSize: 10,
+                  pageSize: 5,
                 },
               },
             }}
-            pageSizeOptions={[10]}
             disableRowSelectionOnClick
           />
         </Box>

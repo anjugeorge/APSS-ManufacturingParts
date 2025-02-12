@@ -5,6 +5,7 @@ import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
+import { LuClipboardPen } from "react-icons/lu";
 import DialogTitle from "@mui/material/DialogTitle";
 import {
   InputLabel,
@@ -18,10 +19,20 @@ import {
 import axios from "axios";
 import { useState } from "react";
 import { FixedSizeList } from "react-window";
-import { Navigate } from "react-router-dom";
+import {
+  Navigate,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
+import ProductList from "../Products/ProductList";
 
-export default function FormDialog() {
+export default function RequestAQuoteForm(props) {
+  console.log(props);
+
+  const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -153,16 +164,22 @@ export default function FormDialog() {
     }
     productList();
   }, []);
+
+  function selectProducts() {
+    setOpen(false);
+    navigate("/products");
+  }
   return (
     <React.Fragment>
       <Button
-        variant="contained"
-        style={{ backgroundColor: "#3D606E" }}
+        variant="outlined"
         onClick={handleClickOpen}
+        style={{ backgroundColor: "#F7B801", color: "#000000" }}
       >
-        Request a Quote
+        {props.product == null ? "Request a Quote" : <LuClipboardPen />}
       </Button>
       <Dialog
+        fullWidth
         open={open}
         onClose={handleClose}
         PaperProps={{
@@ -177,7 +194,7 @@ export default function FormDialog() {
                   companyName: quoteDetials.companyName,
                   email: quoteDetials.email,
                   phoneNumber: quoteDetials.phoneNumber,
-                  product: quoteDetials.product,
+                  product: props.product,
                   partDesc: quoteDetials.partDesc,
                   qty: quoteDetials.qty,
                   brand: quoteDetials.brand,
@@ -199,6 +216,22 @@ export default function FormDialog() {
             Simply fill out the form below, and we will get back to you with a
             tailored quote in no time.
           </DialogContentText>
+          <Button variant="outlined" fullWidth onClick={selectProducts}>
+            Please Select a Product from our catalogue
+          </Button>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="product"
+            name="product"
+            label="Product"
+            type="text"
+            value={props.product}
+            variant="standard"
+            onChange={handleChange}
+            fullWidth
+            disabled
+          />
           <TextField
             autoFocus
             required
@@ -245,17 +278,7 @@ export default function FormDialog() {
             variant="standard"
             onChange={handleChange}
           />
-          <NativeSelect
-            onChange={handleChange}
-            name="product"
-            fullWidth
-            variant="standard"
-            label="Select a Product"
-          >
-            {products.map((product) => (
-              <option name="product">{product.productName}</option>
-            ))}
-          </NativeSelect>
+
           <TextField
             autoFocus
             required

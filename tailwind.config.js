@@ -17,8 +17,8 @@ export default {
       },
       colors: {
         headerColor: "#000000",
-        buttonColor: "#3D606E",
-        buttonHoverColor: "#153B47",
+        buttonColor: "#E3B04B",
+        buttonHoverColor: "#FFB22C",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

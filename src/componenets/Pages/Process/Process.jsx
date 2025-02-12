@@ -100,7 +100,7 @@ const Process = () => {
     <div>
       <ProcessHero />
 
-      <section className="">
+      <section className="bg-gray-100">
         <div className="container py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Why Request a Quote from Us?
@@ -170,7 +170,7 @@ const Process = () => {
               </ul>
             </div>
             <div
-              className="bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white rounded-3xl"
+              className="bg-[#373A40] shadow-sm border border-slate-200   p-6 mx-auto text-white rounded-3xl"
               data-aos="fade-up"
               data-aos-duration="1500"
             >

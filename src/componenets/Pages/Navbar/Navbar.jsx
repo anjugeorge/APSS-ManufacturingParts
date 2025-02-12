@@ -22,15 +22,20 @@ const NavbarMenu = [
     title: "How We Works",
     link: "/how-we-works",
   },
+  {
+    id: 4,
+    title: "Our Products",
+    link: "/products",
+  },
 ];
 
 const Navbar = () => {
   const [dark, setDark] = React.useState(false);
 
-  const darkModeHandler = () => {
+  /*const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");
-  };
+  };*/
   const [menu, setMenu] = React.useState(false);
   function openMenu() {
     setMenu(true);
@@ -40,15 +45,14 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className=" shadow-sm border-b-0 bg-gray-100 dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center-bottom">
-        <nav className="container   mx-auto flex items-center justify-between text-buttonHoverColor dark:text-white font-bold  py-5  font-poppins">
+      <div className=" shadow-sm border-b-[20px] border-yellow-500 ">
+        <nav className="container    mx-auto flex items-center justify-between font-bold  py-3  font-poppins">
           {/* Logo Section*/}
           <div>
             <a href="/">
               {" "}
-              <h3 className="text-xl font-bold flex ">
-                <FontAwesomeIcon icon={faGears} />
-                APSS
+              <h3 className="text-lg font-bold flex ">
+                <img src="/assets/APSS.png" className="w-16 h-16" />
               </h3>
             </a>
           </div>
@@ -62,12 +66,12 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div>
+          {/*<div>
             <button onClick={() => darkModeHandler()}>
               {dark && <IoSunny />}
               {!dark && <IoMoon />}
             </button>
-          </div>
+          </div>*/}
           {/* Hamburger Section*/}
           <div className="md:hidden relative">
             {menu ? (
@@ -80,11 +84,11 @@ const Navbar = () => {
         <div>
           {menu && (
             <div className="">
-              <div className="absolute start-0 top-12 w-full max-h-full bg-gray-100 dark:bg-[url('/assets/BlackBg.png')] bg-cover bg-center z-10 text-white font-bold">
+              <div className="absolute start-0 top-16 bg-white w-full max-h-full z-10 text-white font-bold">
                 <ul>
                   {NavbarMenu.map((item) => (
                     <li
-                      className="text-center p-5 text-buttonHoverColor dark:text-white"
+                      className="text-center p-5 text-black dark:text-white"
                       key={item.id}
                     >
                       <a href={item.link}>{item.title}</a>

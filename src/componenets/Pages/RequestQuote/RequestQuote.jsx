@@ -1,13 +1,14 @@
 import React from "react";
 import FormDialog from "../Form/RequestAQuoteForm";
+import RequestAQuoteForm from "../Form/RequestAQuoteForm";
 
 const RequestQuote = () => {
   return (
     <div>
       {" "}
-      <section className=" rounded-tr-full rounded-br-full   bg-[url(/assets/CTA.png)] bg-clip-content lg:bg-cover bg-bottom lg:mr-52 my-20">
+      <section className=" bg-gray-100  ">
         <div className=" container  flex flex-col items-center ">
-          <div className="py-12 text-center   text-white ">
+          <div className="py-20 text-center   ">
             {" "}
             <h1 className="lg:text-3xl md:text-2xl text-lg pb-3 text-center font-bold">
               Join Our Journey
@@ -21,7 +22,7 @@ const RequestQuote = () => {
             </p>
             <div className="pb-5">
               {" "}
-              <FormDialog />
+              <RequestAQuoteForm />
             </div>
           </div>
         </div>
