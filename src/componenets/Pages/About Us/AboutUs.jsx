@@ -106,8 +106,8 @@ const AboutUs = () => {
   return (
     <>
       <AboutUsHero />
-      <section>
-        <div className="container py-20 bg-gray-100">
+      <section className="bg-gray-100">
+        <div className="container py-20 ">
           <div className="grid grid-cols-1 gap-4">
             <div>
               <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
@@ -122,7 +122,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-[#373A40] text-white p-10 rounded-3xl"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white "
               data-aos="fade-up"
               data-aos-duration="1500"
             >
@@ -181,16 +181,14 @@ const AboutUs = () => {
             data-aos-duration="1500"
           >
             {customerCentricApproach.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor  rounded-lg  p-6 mx-auto">
+              <div className="flex flex-col bg-white shadow-sm  p-6 text-slate-800 hover:bg-blue-500 hover:text-white">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
-                  <h5 className="ml-3 text-slate-800 font-semibold text-sm/7">
+                  <h5 className="ml-3  font-semibold text-sm/7">
                     {content.title}
                   </h5>
                 </div>
-                <p className="block text-slate-600 pb-3 text-sm/7">
-                  {content.desc}
-                </p>
+                <p className="block  pb-3 text-sm/7">{content.desc}</p>
               </div>
             ))}
           </div>

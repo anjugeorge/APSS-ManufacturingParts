@@ -21,9 +21,36 @@ const Footer = () => {
   return (
     <div>
       {" "}
+      {/*<footer>
+        {" "}
+        <div className="bg-[#0c2566]">
+          <div className="container py-20 flex flex-col items-center text-white">
+            <a href="/">
+              {" "}
+              <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
+                APSS
+              </h1>
+            </a>
+
+            <div>
+              <ul className="flex items-center gap-5">
+                {NavbarMenu.map((item) => (
+                  <li key={item.id}>
+                    <a href={item.link}>{item.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <span className="text-xs text-center pb-5 pt-2">
+              Copyright <Copyright className="text-xs"></Copyright>2025. All
+              Rights Reserved.
+            </span>
+          </div>
+        </div>
+      </footer>*/}
       <footer>
         {" "}
-        <div className="bg-black">
+        <div className="bg-buttonHoverColor">
           <div className="container py-20 flex flex-col items-center text-white">
             <a href="/">
               {" "}

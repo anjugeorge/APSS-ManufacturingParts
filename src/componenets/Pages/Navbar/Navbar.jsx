@@ -1,11 +1,14 @@
 import React from "react";
-import { FaHamburger } from "react-icons/fa";
+import { FaHamburger, FaList } from "react-icons/fa";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGears } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { IoMoon } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
+import { FiList } from "react-icons/fi";
+import { FaBars } from "react-icons/fa6";
+
 const NavbarMenu = [
   {
     id: 1,
@@ -27,6 +30,11 @@ const NavbarMenu = [
     title: "Our Products",
     link: "/products",
   },
+  {
+    id: 5,
+    title: "Contact Us",
+    link: "/contact-us",
+  },
 ];
 
 const Navbar = () => {
@@ -45,14 +53,22 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className=" shadow-sm border-b-[20px] border-yellow-500 ">
+      <div className=" shadow-lg bg-[#ffffff]">
         <nav className="container    mx-auto flex items-center justify-between font-bold  py-3  font-poppins">
           {/* Logo Section*/}
           <div>
+            {/* Hamburger Section*/}
+            <div className="md:hidden relative inline-block -inset-y-3">
+              {menu ? (
+                <IoIosCloseCircleOutline onClick={closeMenu} />
+              ) : (
+                <FaBars onClick={openMenu} />
+              )}
+            </div>
             <a href="/">
               {" "}
-              <h3 className="text-lg font-bold flex ">
-                <img src="/assets/APSS.png" className="w-16 h-16" />
+              <h3 className="text-lg font-bold inline-block pl-3">
+                <img src="/assets/APSSLogo.png" className="w-10 h-10" />
               </h3>
             </a>
           </div>
@@ -72,19 +88,24 @@ const Navbar = () => {
               {!dark && <IoMoon />}
             </button>
           </div>*/}
-          {/* Hamburger Section*/}
-          <div className="md:hidden relative">
-            {menu ? (
-              <IoIosCloseCircleOutline onClick={closeMenu} />
-            ) : (
-              <HiOutlineDotsHorizontal onClick={openMenu} />
-            )}
+
+          <div>
+            <a href="mailto:support@apssorg.com">
+              <FontAwesomeIcon
+                size="xl"
+                icon={faEnvelope}
+                bounce
+                style={{
+                  color: "#082056",
+                }}
+              />
+            </a>
           </div>
         </nav>
         <div>
           {menu && (
             <div className="">
-              <div className="absolute start-0 top-16 bg-white w-full max-h-full z-10 text-white font-bold">
+              <div className="absolute start-0 top-16 bg-white w-full max-h-full z-20 text-white font-bold">
                 <ul>
                   {NavbarMenu.map((item) => (
                     <li

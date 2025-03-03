@@ -7,6 +7,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import { LuClipboardPen } from "react-icons/lu";
 import DialogTitle from "@mui/material/DialogTitle";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   InputLabel,
   ListItem,
@@ -174,7 +177,7 @@ export default function RequestAQuoteForm(props) {
       <Button
         variant="outlined"
         onClick={handleClickOpen}
-        style={{ backgroundColor: "#F7B801", color: "#000000" }}
+        style={{ backgroundColor: "#246AF3", color: "#ffffff" }}
       >
         {props.product == null ? "Request a Quote" : <LuClipboardPen />}
       </Button>
@@ -210,7 +213,12 @@ export default function RequestAQuoteForm(props) {
           },
         }}
       >
-        <DialogTitle>Request a quote</DialogTitle>
+        <DialogTitle>
+          Request a quote or{" "}
+          <a href="mailto:support@apssorg.com">
+            <Button variant="contained">Email Us</Button>
+          </a>
+        </DialogTitle>
         <DialogContent>
           <DialogContentText>
             Simply fill out the form below, and we will get back to you with a

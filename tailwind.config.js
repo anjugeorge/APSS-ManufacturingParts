@@ -17,12 +17,13 @@ export default {
       },
       colors: {
         headerColor: "#000000",
-        buttonColor: "#E3B04B",
-        buttonHoverColor: "#FFB22C",
+        buttonColor: "#246AF3",
+        buttonHoverColor: "#082056",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         varela: ["Varela Round", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
       },
     },
   },

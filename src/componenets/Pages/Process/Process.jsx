@@ -121,16 +121,14 @@ const Process = () => {
             data-aos-duration="1500"
           >
             {requestQuoteContent.map((content) => (
-              <div className="flex flex-col bg-white shadow-sm border-l-4 border-buttonColor rounded-lg  p-6">
+              <div className="flex flex-col bg-white shadow-sm   text-slate-800 hover:bg-blue-500 hover:text-white p-6">
                 <div key={content.id} className="flex items-center mb-4">
                   {content.icon}
-                  <h5 className="ml-3 text-slate-800 font-semibold text-sm/7">
+                  <h5 className="ml-3  font-semibold text-sm/7">
                     {content.title}
                   </h5>
                 </div>
-                <p className="block text-slate-600 pb-3 text-sm/7">
-                  {content.desc}
-                </p>
+                <p className="block  pb-3 text-sm/7">{content.desc}</p>
               </div>
             ))}
           </div>
@@ -170,7 +168,7 @@ const Process = () => {
               </ul>
             </div>
             <div
-              className="bg-[#373A40] shadow-sm border border-slate-200   p-6 mx-auto text-white rounded-3xl"
+              className="bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white"
               data-aos="fade-up"
               data-aos-duration="1500"
             >

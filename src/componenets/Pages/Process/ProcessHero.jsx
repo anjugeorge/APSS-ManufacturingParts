@@ -8,7 +8,24 @@ const ProcessHero = () => {
   }, []);
   return (
     <>
-      <main>
+      <main className="bg-[url('/assets/HeroBg.png')] bg-center bg-cover">
+        {" "}
+        <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center pt-12 pb-60">
+          <div className="text-center md:text-start my-auto text-black relative z-10 ">
+            <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
+              Get Your Tailored Quote Today!
+            </h1>
+            <p className="pb-3  text-sm/7 ">
+              At APSS, we are your one-stop shop for all things mechanical.
+            </p>
+            <div className="pb-5 text-center ">
+              {" "}
+              <FormDialog />
+            </div>
+          </div>
+        </div>
+      </main>
+      {/*<main>
         <div className="">
           <div className=" grid grid-cols-1 md:grid-cols-2  ">
             <div
@@ -44,7 +61,7 @@ const ProcessHero = () => {
             </div>
           </div>
         </div>
-      </main>
+      </main>*/}
     </>
   );
 };
