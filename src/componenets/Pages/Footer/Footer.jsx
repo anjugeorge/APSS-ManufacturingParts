@@ -16,6 +16,16 @@ const NavbarMenu = [
     title: "How We Works",
     link: "/how-we-works",
   },
+  {
+    id: 4,
+    title: "Our Products",
+    link: "/products",
+  },
+  {
+    id: 5,
+    title: "Contact Us",
+    link: "/contact-us",
+  },
 ];
 const Footer = () => {
   return (
