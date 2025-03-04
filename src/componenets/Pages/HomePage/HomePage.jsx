@@ -24,13 +24,13 @@ const expertiseContent = [
   {
     id: 1,
     title: "Industrial Machinery Components",
-    desc: "From gears to bearings, our extensive inventory of industrial machinery components keeps your operations running smoothly. Whether you&#39;re maintaining a production line or upgrading your facilities, we have got the parts you need.",
+    desc: "From gears to bearings, our extensive inventory of industrial machinery components keeps your operations running smoothly. Whether you are maintaining a production line or upgrading your facilities, we have got the parts you need.",
     icon: <FontAwesomeIcon icon={faGears} />,
   },
   {
     id: 2,
     title: "Automotive Excellence",
-    desc: "Rev up your automotive projects with our comprehensive range of high-quality parts. From engine components to transmission systems, we are your trusted partner in keeping vehicles onthe road.",
+    desc: "Rev up your automotive projects with our comprehensive range of high-quality parts. From engine components to transmission systems, we are your trusted partner in keeping vehicles on the road.",
     icon: <FontAwesomeIcon icon={faTruckMoving} />,
   },
 ];

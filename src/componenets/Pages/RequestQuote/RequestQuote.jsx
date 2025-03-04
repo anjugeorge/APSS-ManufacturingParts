@@ -20,9 +20,16 @@ const RequestQuote = () => {
               ahead – all to serve you better. Ready to experience the APSS
               difference?
             </p>
-            <div className="pb-5">
+            <div className="col-span-1 my-auto text-center gap-4">
               {" "}
-              <RequestAQuoteForm />
+              <a href="/contact-us">
+                <button
+                  type="button"
+                  className="px-5 py-2.5 text-sm font-medium  border-2 border-solid bg-buttonColor  rounded-lg hover:bg-buttonHoverColor text-white"
+                >
+                  Contact Us Today
+                </button>
+              </a>
             </div>
           </div>
         </div>

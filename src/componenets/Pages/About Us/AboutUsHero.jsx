@@ -9,11 +9,11 @@ const AboutUsHero = () => {
   return (
     <>
       {" "}
-      <main className="bg-[url('/assets/HeroBg2.png')] bg-center bg-cover">
+      <main className="bg-[url('/assets/HeroBg.png')] bg-center bg-cover">
         {" "}
-        <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center pt-12 pb-60">
-          <div className="text-center md:text-start my-auto text-black relative z-10 ">
-            <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
+        <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center py-20 lg:py-28 backdrop-blur-sm">
+          <div className="text-center md:text-start my-auto text-white relative z-10 ">
+            <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
               Your Trusted Partner in Mechanical Parts
             </h1>
             <p className="pb-3  text-sm/7 text-center">

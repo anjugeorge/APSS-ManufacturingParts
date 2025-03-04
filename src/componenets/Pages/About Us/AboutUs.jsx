@@ -15,7 +15,7 @@ const customerCentricApproach = [
   {
     id: 1,
     title: "24/7 Support",
-    desc: "Because we know mechanical issues don&#39;t stick to business hours.",
+    desc: "Because we know mechanical issues don't stick to business hours.",
     icon: <MdContactSupport />,
   },
   {
@@ -122,7 +122,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white "
+              className="grid grid-cols-1 md:grid-cols-3 gap-4  bg-white shadow-sm  p-6 text-slate-800 "
               data-aos="fade-up"
               data-aos-duration="1500"
             >
@@ -133,23 +133,22 @@ const AboutUs = () => {
                   Our Core Values
                 </h1>
               </div>
-              <div className="col-span-1 md:col-span-2 my-auto text-sm/7">
-                <p> At the heart of everything we do are our core values:</p>
-              </div>
               <div
                 className="md:col-span-2 md:row-span-1 col-span-1 text-start my-auto md:text-lg/7 text-sm/7"
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
                 {" "}
-                <ul className="list-outside">
-                  {coreValueList.map((content) => (
-                    <li key={content.id} className="flex pb-2 text-sm/7">
-                      <FaSquare className="mr-2" />
-                      {content.title} : {content.desc}
-                    </li>
-                  ))}
-                </ul>
+                {coreValueList.map((content) => (
+                  <div className="flex flex-col bg-white shadow-sm  p-6 text-slate-800 hover:bg-blue-500 hover:text-white">
+                    <div key={content.id} className="flex items-center mb-4">
+                      <h5 className="  font-semibold text-sm/7">
+                        {content.title}
+                      </h5>
+                    </div>
+                    <p className="block  pb-3 text-sm/7">{content.desc}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

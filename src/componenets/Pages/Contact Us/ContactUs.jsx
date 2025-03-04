@@ -30,7 +30,7 @@ const ContactUs = () => {
   return (
     <>
       {" "}
-      <main className="bg-[url('/assets/ContactUsBg.png')] bg-center bg-cover">
+      <main className="bg-[url('/assets/ContactUsBg.png')] bg-left lg:bg-center bg-cover">
         {" "}
         <div className="grid grid-cols-1 md:grid-cols-2  gap-12 relative z-10 px-5 md:px-20 py-20 lg:py-32 ">
           <div className="text-center md:text-start my-auto text-white">

@@ -70,7 +70,7 @@ const Footer = () => {
             </a>
 
             <div>
-              <ul className="flex items-center gap-5">
+              <ul className="flex flex-col lg:flex-row items-center gap-5">
                 {NavbarMenu.map((item) => (
                   <li key={item.id}>
                     <a href={item.link}>{item.title}</a>

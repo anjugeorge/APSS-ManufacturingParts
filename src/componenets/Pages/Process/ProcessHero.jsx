@@ -8,7 +8,25 @@ const ProcessHero = () => {
   }, []);
   return (
     <>
-      <main className="bg-[url('/assets/HeroBg2.png')] bg-center bg-cover">
+      {" "}
+      <main className="bg-[url('/assets/HeroBg.png')] bg-center bg-cover">
+        {" "}
+        <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center py-20 lg:py-28 backdrop-blur-sm">
+          <div className="text-center md:text-start my-auto text-white relative z-10 ">
+            <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
+              Get Your Tailored Quote Today!
+            </h1>
+            <p className="pb-3  text-sm/7 text-center">
+              Looking for top-quality mechanical parts at competitive prices?
+              You have come to the right place! At APSS, we are your one-stop
+              shop for all things mechanical. Whether you need industrial
+              machinery parts, general mechanical spares, or automotive
+              components, we have got you covered.
+            </p>
+          </div>
+        </div>
+      </main>
+      {/*<main className="bg-[url('/assets/HeroBg2.png')] bg-center bg-cover">
         {" "}
         <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center pt-12 pb-60">
           <div className="text-center md:text-start my-auto text-black relative z-10 ">
@@ -24,7 +42,7 @@ const ProcessHero = () => {
             </p>
           </div>
         </div>
-      </main>
+      </main>*/}
       {/*<main>
         <div className="">
           <div className=" grid grid-cols-1 md:grid-cols-2  ">

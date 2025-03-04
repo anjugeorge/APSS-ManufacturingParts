@@ -151,11 +151,8 @@ const Process = () => {
             Why Request a Quote from Us?
           </h1>
           <p className="text-center text-sm/7 pb-5">
-            Our deep industry partnerships with leading manufacturers have
-            allowed us to stay at the forefront of technological advancements,
-            ensuring you always have access to the latest and most reliable
-            parts. With over two decades of experience, we have honed our
-            expertise in critical areas such as:
+            With over two decades of experience, we have honed our expertise in
+            critical areas such as:
           </p>
           <div
             className="grid md:grid-cols-4 grid-cols-1 gap-4"
