@@ -94,7 +94,6 @@ const Navbar = () => {
               <FontAwesomeIcon
                 size="xl"
                 icon={faEnvelope}
-                bounce
                 style={{
                   color: "#082056",
                 }}

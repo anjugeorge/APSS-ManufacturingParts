@@ -37,6 +37,27 @@ const requestQuoteContent = [
   },
 ];
 
+const services = [
+  {
+    id: 1,
+    title: "01. Request a quote",
+    desc: "Simply fill out the form, and we'll get back to you with a tailored quote in no time. The more details you provide, the more accurate your quote will be. ",
+    image: "/assets/form.png",
+  },
+  {
+    id: 2,
+    title: "02. Team reviews your request",
+    desc: "Our team reviews your request and we source the best options based on your needs. You will receive a customized quote within 24 hours",
+    image: "/assets/review.png",
+  },
+  {
+    id: 3,
+    title: "03. Reliable & Fast Delivery",
+    desc: "We quickly deliver high-quality manufacturing parts from preferred brands at competitive prices.",
+    image: "/assets/delivery.png",
+  },
+];
+
 const requestFormContent = [
   {
     id: 1,
@@ -99,21 +120,42 @@ const Process = () => {
   return (
     <div>
       <ProcessHero />
+      <section className="bg-gray-200">
+        <div className="container  py-20 flex flex-col items-center">
+          <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
+            Ready to Get Started? It's Easy!
+          </h1>
+          <div
+            className="grid md:grid-cols-3 grid-cols-1 gap-6 lg:px-20"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            {services.map((content) => (
+              <div className=" bg-white shadow-sm  p-6 text-blue-950 ">
+                <div key={content.id} className="flex flex-col  mb-4">
+                  <img src={content.image} className="w-36 mx-auto" />
 
-      <section className="bg-gray-100">
+                  <h5 className="ml-3  font-semibold text-sm/7">
+                    {content.title}
+                  </h5>
+                  <p className="pb-3  text-sm/7 ">{content.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>{" "}
+      <section className="">
         <div className="container py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
             Why Request a Quote from Us?
           </h1>
           <p className="text-center text-sm/7 pb-5">
-            At APSS, we are your one-stop shop for all things mechanical.
-            Whether you need industrial machinery parts, general mechanical
-            spares, or automotive components, w have got you covered.Our deep
-            industry partnerships with leading manufacturers have allowed us to
-            stay at the forefront of technological advancements, ensuring you
-            always have access to the latest and most reliable parts. With over
-            two decades of experience, we have honed our expertise in critical
-            areas such as:
+            Our deep industry partnerships with leading manufacturers have
+            allowed us to stay at the forefront of technological advancements,
+            ensuring you always have access to the latest and most reliable
+            parts. With over two decades of experience, we have honed our
+            expertise in critical areas such as:
           </p>
           <div
             className="grid md:grid-cols-4 grid-cols-1 gap-4"
@@ -134,63 +176,6 @@ const Process = () => {
           </div>
         </div>
       </section>
-
-      <section className="bg-gray-200">
-        <div className=" container py-20">
-          <div className=" pb-10">
-            <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
-              Ready to Get Started? It's Easy!
-            </h1>
-            <p className="text-center text-sm/7">
-              Simply fill out the form below, and we&#39;ll get back to you with
-              a tailored quote in no time. The more details you provide, the
-              more accurate your quote will be. Don&#39;t hesitate to specify
-              preferred brands or manufacturers – it helps us find the perfect
-              match for your needs!
-            </p>
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div className="my-auto sm:mx-auto">
-              <ul>
-                {requestFormContent.map((content) => (
-                  <li
-                    key={content.id}
-                    className=" flex items-center pb-2  text-sm/7"
-                  >
-                    <FaSquare className="mr-2" />
-                    {content.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className="bg-buttonHoverColor shadow-sm border border-slate-200   p-6 mx-auto text-white"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 ">
-                What Happens Next?
-              </h1>
-              <ul>
-                {whatHappensNextContent.map((content) => (
-                  <li
-                    key={content.id}
-                    className="flex items-center pb-2  text-sm/7"
-                  >
-                    <FaSquare className="mr-2" />
-                    {content.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-gray-200">
         <div className="container">
           <div className="grid grid-cols-2 gap-4">
@@ -198,7 +183,6 @@ const Process = () => {
           </div>
         </div>
       </section>
-
       <RequestQuote />
       <Footer />
     </div>

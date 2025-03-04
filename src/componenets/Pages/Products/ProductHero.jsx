@@ -9,17 +9,19 @@ const ProductHero = () => {
   }, []);
   return (
     <>
-      <main className="bg-[url('/assets/HeroBg.png')] bg-center bg-cover">
+      <main className="bg-[url('/assets/HeroBg2.png')] bg-center bg-cover">
         {" "}
         <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center pt-12 pb-60">
           <div className="text-center md:text-start my-auto text-black relative z-10 ">
             <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
               Explore Our Products
             </h1>
-            <p className="pb-3  text-sm/7 ">
+            <p className="pb-3  text-sm/7 text-center">
               {" "}
-              As industries advance, mechanical manufacturing remains a key
-              driver of technological innovation and industrial progress.
+              Don't let faulty parts slow you down. Get the high-quality
+              components you need, when you need them. Our journey began with a
+              simple vision: to provide top-quality mechanical components with
+              unparalleled service and expertise.
             </p>
           </div>
         </div>

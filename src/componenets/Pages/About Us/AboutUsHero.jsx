@@ -9,22 +9,21 @@ const AboutUsHero = () => {
   return (
     <>
       {" "}
-      <main className="bg-[url('/assets/HeroBg.png')] bg-center bg-cover">
+      <main className="bg-[url('/assets/HeroBg2.png')] bg-center bg-cover">
         {" "}
         <div className="grid grid-cols-1 gap-4  mx-auto px-10 lg:px-72 place-items-center pt-12 pb-60">
           <div className="text-center md:text-start my-auto text-black relative z-10 ">
             <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
               Your Trusted Partner in Mechanical Parts
             </h1>
-            <p className="pb-3  text-sm/7 ">
+            <p className="pb-3  text-sm/7 text-center">
               At APSS Solutions, we are not just a mechanical parts reseller –
               we are your dedicated partner in powering innovation and
-              efficiency.
+              efficiency. Our deep industry partnerships with leading
+              manufacturers have allowed us to stay at the forefront of
+              technological advancements, ensuring you always have access to the
+              latest and most reliable parts.
             </p>
-            <div className="pb-5 text-center ">
-              {" "}
-              <FormDialog />
-            </div>
           </div>
         </div>
       </main>

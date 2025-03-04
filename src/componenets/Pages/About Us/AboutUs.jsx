@@ -134,14 +134,7 @@ const AboutUs = () => {
                 </h1>
               </div>
               <div className="col-span-1 md:col-span-2 my-auto text-sm/7">
-                <p>
-                  {" "}
-                  Don't let subpar parts hold your business back. Join the ranks
-                  of satisfied clients who trust us to keep their operations
-                  running at peak efficiency. Your success is our driving force.
-                  Partner with APSS today and experience the perfect blend of
-                  quality, service, and value.
-                </p>
+                <p> At the heart of everything we do are our core values:</p>
               </div>
               <div
                 className="md:col-span-2 md:row-span-1 col-span-1 text-start my-auto md:text-lg/7 text-sm/7"
@@ -169,11 +162,8 @@ const AboutUs = () => {
             Customer-Centric Approach
           </h1>
           <p className="text-center text-sm/7 pb-5">
-            Our deep industry partnerships with leading manufacturers have
-            allowed us to stay at the forefront of technological advancements,
-            ensuring you always have access to the latest and most reliable
-            parts. With over two decades of experience, we have honed our
-            expertise in critical areas such as:
+            At APSS, we don't just meet expectations – we exceed them.
+            Here&#39;s what sets us apart:
           </p>
           <div
             className="grid md:grid-cols-3 grid-cols-1 gap-4"
