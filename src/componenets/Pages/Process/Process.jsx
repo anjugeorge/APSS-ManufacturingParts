@@ -120,31 +120,6 @@ const Process = () => {
   return (
     <div>
       <ProcessHero />
-      <section className="bg-gray-200">
-        <div className="container  py-20 flex flex-col items-center">
-          <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
-            Ready to Get Started? It's Easy!
-          </h1>
-          <div
-            className="grid md:grid-cols-3 grid-cols-1 gap-6 lg:px-20"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            {services.map((content) => (
-              <div className=" bg-white shadow-sm  p-6 text-blue-950 ">
-                <div key={content.id} className="flex flex-col  mb-4">
-                  <img src={content.image} className="w-36 mx-auto" />
-
-                  <h5 className="ml-3  font-semibold text-sm/7">
-                    {content.title}
-                  </h5>
-                  <p className="pb-3  text-sm/7 ">{content.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>{" "}
       <section className="">
         <div className="container py-20 flex flex-col items-center">
           <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
@@ -174,12 +149,30 @@ const Process = () => {
         </div>
       </section>
       <section className="bg-gray-200">
-        <div className="container">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="mx-auto"></div>
+        <div className="container  py-20 flex flex-col items-center">
+          <h1 className="lg:text-3xl md:text-2xl text-lg text-center font-bold pb-5 lg:pb-10">
+            Ready to Get Started? It's Easy!
+          </h1>
+          <div
+            className="grid md:grid-cols-3 grid-cols-1 gap-6 lg:px-20"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            {services.map((content) => (
+              <div className=" bg-white shadow-sm  p-6 text-blue-950 ">
+                <div key={content.id} className="flex flex-col  mb-4">
+                  <img src={content.image} className="w-36 mx-auto" />
+
+                  <h5 className="ml-3  font-semibold text-sm/7">
+                    {content.title}
+                  </h5>
+                  <p className="pb-3  text-sm/7 ">{content.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </section>{" "}
       <RequestQuote />
       <Footer />
     </div>
